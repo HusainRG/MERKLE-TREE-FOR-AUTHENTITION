@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home Page
+{% endblock %}
+
+
+{% block content %}
+<h1>Welcome {{ request.user.username }}</h1>
+<h1>Auth status: {{request.user.is_authenticated}}</h1>
+    
+    <header class="header">
+        <a href="#" class="logo">Merkle Tree For Authentication Project</a>
+        <nav class="nav-items">
+          <a href="#">Home</a>
+          <a href="#">Files</a>
+          <a href="#">Contact</a>
+        </nav>
+      </header>
+      <main>
+        <div class="intro">
+          <h1>Markle Tree authentication</h1>
+          <p>Highly secured Technique </p>
+          <div class="rk" >
+    <!--       <button>Test 1</button> <button>Test 2</button> -->
+          </div>
+        </div>
+       
+        <div class="about-me">
+          <div class="about-me-text">
+            <h2>About Us</h2>
+            <p><strong> Iqra Malik <br> Chandni Qureshi <br> Bipin Yadav <br> Hussain Rangonwala</strong> </p>
+          </div>
+          <img src="https://finance.advids.co/wp-content/uploads//2017/08/onedrive-sync.gif" alt="">
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="bottom-links">
+          <div class="links">
+            <span>More Info</span>
+            <div class="panel">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            </div>
+          </div>
+          <div class="links">
+            <span>Social Links</span>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </footer>
+{% endblock %}
